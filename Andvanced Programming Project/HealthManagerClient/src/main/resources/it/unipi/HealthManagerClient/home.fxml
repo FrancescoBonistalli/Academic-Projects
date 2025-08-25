@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.HealthManagerClient.HomeController">
+   <children>
+      <!-- Title Text with a blue shade -->
+      <Text fx:id="TestoStatoSalute" strokeType="OUTSIDE" strokeWidth="0.0" text="Health Manager" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+         <style>
+            -fx-fill: deepskyblue; /* Title in vibrant blue */
+         </style>
+      </Text>
+
+      <!-- Subtitle Text with light blue -->
+      <Text strokeType="OUTSIDE" strokeWidth="3.0" text="(Click su un riquadro per visualizzare la relativa tabella)">
+         <style>
+            -fx-fill: #555555; /* Dark gray for better readability */
+         </style>
+      </Text>
+
+      <!-- HBox for Boxes with blue theme -->
+      <HBox alignment="CENTER" prefHeight="305.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <!-- Sonno Box -->
+            <VBox fx:id="SonnoBox" alignment="CENTER" onMouseClicked="#goToSonnoTab" prefHeight="343.0" prefWidth="200.0" style="-fx-border-color: deepskyblue; -fx-border-width: 3px; -fx-background-color: #e0f7fa; -fx-background-radius: 10px; -fx-padding: 20px;">
+               <children>
+                  <Text onMouseClicked="#goToSonnoTab" strokeType="OUTSIDE" strokeWidth="0.0" text="Sonno">
+                     <style>
+                        -fx-fill: deepskyblue; /* Text color for Sonno */
+                     </style>
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/sleep.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="TastoAddSonno" mnemonicParsing="false" onAction="#goToNuovoSonno" text="Aggiungi">
+                     <style>
+                        -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, lightblue, blue);
+                        -fx-text-fill: white;
+                        -fx-font-size: 14px;
+                        -fx-font-weight: bold;
+                        -fx-background-radius: 20px;
+                        -fx-border-radius: 20px;
+                        -fx-padding: 10px 20px;
+                     </style>
+                  </Button>
+               </children>
+            </VBox>
+
+            <!-- Attivita Box -->
+            <VBox fx:id="AttivitaBox" alignment="CENTER" onMouseClicked="#goToAttivitaTab" prefHeight="340.0" prefWidth="200.0" style="-fx-border-color: deepskyblue; -fx-border-width: 3px; -fx-background-color: #e0f7fa; -fx-background-radius: 10px; -fx-padding: 20px;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Attività">
+                     <style>
+                        -fx-fill: deepskyblue; /* Text color for Attività */
+                     </style>
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#goToAttivitaTab" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/sport.png" />
+                     </image></ImageView>
+                  <Button fx:id="TastoAddAttivita" mnemonicParsing="false" onAction="#goToNuovoAttivita" text="Aggiungi">
+                     <style>
+                        -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, lightblue, blue);
+                        -fx-text-fill: white;
+                        -fx-font-size: 14px;
+                        -fx-font-weight: bold;
+                        -fx-background-radius: 20px;
+                        -fx-border-radius: 20px;
+                        -fx-padding: 10px 20px;
+                     </style>
+                  </Button>
+               </children>
+            </VBox>
+
+            <!-- Pasti Box -->
+            <VBox fx:id="PastiBox" alignment="CENTER" onMouseClicked="#goToPastiTab" prefHeight="324.0" prefWidth="200.0" style="-fx-border-color: deepskyblue; -fx-border-width: 3px; -fx-background-color: #e0f7fa; -fx-background-radius: 10px; -fx-padding: 20px;">
+               <children>
+                  <Text onMouseClicked="#goToPastiTab" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasti">
+                     <style>
+                        -fx-fill: deepskyblue; /* Text color for Pasti */
+                     </style>
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#goToPastiTab" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/food.png" />
+                     </image></ImageView>
+                  <Button fx:id="TastoAddPasto" mnemonicParsing="false" onAction="#goToNuovoPasto" text="Aggiungi">
+                     <style>
+                        -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, lightblue, blue);
+                        -fx-text-fill: white;
+                        -fx-font-size: 14px;
+                        -fx-font-weight: bold;
+                        -fx-background-radius: 20px;
+                        -fx-border-radius: 20px;
+                        -fx-padding: 10px 20px;
+                     </style>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+
+      <!-- Button to return to Login -->
+      <Button fx:id="TastoHomeToLogin" mnemonicParsing="false" onAction="#homeToLogin" text="Torna al login">
+         <style>
+            -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, lightblue, blue);
+            -fx-text-fill: white;
+            -fx-font-size: 14px;
+            -fx-font-weight: bold;
+            -fx-background-radius: 20px;
+            -fx-border-radius: 20px;-fx-padding: 10px 20px;</style>
+      </Button>
+   </children>
+   <!-- Background for the whole VBox -->
+   <style>
+      -fx-background-color: #e0f7fa; /* Light blue background for the entire VBox */
+   </style>
+</VBox>

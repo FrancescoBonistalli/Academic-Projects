@@ -1,0 +1,17 @@
+button {
+    padding: 10px 40px 10px 20px; 
+    margin: 5px;
+    border: none;
+    background-color: #007BFF; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative; 
+    overflow: hidden; 
+    text-align: left; 
+}
+
+body{
+    background-color: #E6F4F1;
+}

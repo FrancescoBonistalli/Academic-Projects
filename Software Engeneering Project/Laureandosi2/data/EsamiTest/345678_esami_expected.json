@@ -1,0 +1,86 @@
+{
+  "INGEGNERIA DEL SOFTWARE": {
+    "VOTO": "30 ",
+    "PESO": 6
+  },
+  "RETI INFORMATICHE": {
+    "VOTO": "26 ",
+    "PESO": 9
+  },
+  "ALGORITMI E STRUTTURE DATI": {
+    "VOTO": "30 ",
+    "PESO": 6
+  },
+  "CALCOLATORI ELETTRONICI": {
+    "VOTO": "21 ",
+    "PESO": 9
+  },
+  "COMUNICAZIONI NUMERICHE": {
+    "VOTO": "24 ",
+    "PESO": 9
+  },
+  "CALCOLO NUMERICO": {
+    "VOTO": "26 ",
+    "PESO": 6
+  },
+  "PROGRAMMAZIONE DI INTERFACCE": {
+    "VOTO": "30 ",
+    "PESO": 6
+  },
+  "ELETTRONICA DIGITALE": {
+    "VOTO": "18 ",
+    "PESO": 9
+  },
+  "SISTEMI OPERATIVI": {
+    "VOTO": "24 ",
+    "PESO": 9
+  },
+  "RICERCA OPERATIVA": {
+    "VOTO": "18 ",
+    "PESO": 9
+  },
+  "ALGEBRA LINEARE E ANALISI MATEMATICA II": {
+    "VOTO": "30 ",
+    "PESO": 12
+  },
+  "FONDAMENTI DI PROGRAMMAZIONE": {
+    "VOTO": "25 ",
+    "PESO": 9
+  },
+  "ELETTROTECNICA": {
+    "VOTO": "18 ",
+    "PESO": 6
+  },
+  "RETI LOGICHE": {
+    "VOTO": "25 ",
+    "PESO": 9
+  },
+  "PROGETTAZIONE WEB": {
+    "VOTO": "27 ",
+    "PESO": 6
+  },
+  "FISICA GENERALE I": {
+    "VOTO": "24 ",
+    "PESO": 12
+  },
+  "BASI DI DATI": {
+    "VOTO": "27 ",
+    "PESO": 9
+  },
+  "ANALISI MATEMATICA I": {
+    "VOTO": "25 ",
+    "PESO": 12
+  },
+  "CRITTOGRAFIA": {
+    "VOTO": "28 ",
+    "PESO": 6
+  },
+  "ECONOMIA E ORGANIZZAZIONE AZIENDALE": {
+    "VOTO": "29 ",
+    "PESO": 6
+  },
+  "FONDAMENTI DI AUTOMATICA": {
+    "VOTO": "28 ",
+    "PESO": 9
+  }
+}

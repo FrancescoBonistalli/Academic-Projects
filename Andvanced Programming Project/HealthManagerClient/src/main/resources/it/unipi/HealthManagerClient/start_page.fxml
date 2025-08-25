@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.HealthManagerClient.Start_pageController">
+   <children>
+      <!-- Title Text with a clear blue shade -->
+      <Text fx:id="TestoTitoloStart" layoutX="167.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Health Manager">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <style>
+            -fx-fill: deepskyblue;
+         </style>
+      </Text>
+      <!-- Start Button with a nice blue gradient background -->
+      <Button fx:id="TastoInizia" layoutX="247.0" layoutY="170.0" mnemonicParsing="false" onAction="#caricaDati" prefHeight="61.0" prefWidth="106.0" text="Inizia">
+         <style>
+            -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, lightblue, blue);
+            -fx-text-fill: white;
+            -fx-font-size: 14px;
+            -fx-font-weight: bold;
+            -fx-background-radius: 30px;
+            -fx-border-radius: 30px;
+            -fx-padding: 5px;
+         </style>
+      </Button>
+
+   </children>
+
+   <!-- Background color for the entire AnchorPane -->
+   <style>
+      -fx-background-color: #e0f7fa; /* Light blue background */
+   </style>
+</AnchorPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.HealthManagerClient.RegistrazioneController">
+   <children>
+      <!-- Title Text with blue color -->
+      <Text fx:id="TitoloRegistrazione" layoutX="212.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRAZIONE">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <style>
+            -fx-fill: deepskyblue; /* Title in blue */
+         </style>
+      </Text>
+
+      <!-- Form labels and input fields with spacing and blue accents -->
+      <Label layoutX="173.0" layoutY="101.0" text="Nome:" textFill="#00a1ff" />
+      <TextField fx:id="CampoNome" layoutX="230.0" layoutY="96.0" style="-fx-background-color: #e0f7fa; -fx-border-color: deepskyblue; -fx-border-radius: 5px;" />
+
+      <Label layoutX="159.0" layoutY="143.0" text="Cognome:" textFill="#00a1ff" />
+      <TextField fx:id="CampoCognome" layoutX="230.0" layoutY="138.0" style="-fx-background-color: #e0f7fa; -fx-border-color: deepskyblue; -fx-border-radius: 5px;" />
+
+      <Label layoutX="159.0" layoutY="56.0" text="Username:" textFill="#00a1ff" />
+      <TextField fx:id="CampoUsername" layoutX="231.0" layoutY="51.0" style="-fx-background-color: #e0f7fa; -fx-border-color: deepskyblue; -fx-border-radius: 5px;" />
+
+      <Label layoutX="159.0" layoutY="189.0" text="Password:" textFill="#00a1ff" />
+      <TextField fx:id="CampoPassword" layoutX="230.0" layoutY="184.0" style="-fx-background-color: #e0f7fa; -fx-border-color: deepskyblue; -fx-border-radius: 5px;" />
+
+      <Label layoutX="202.0" layoutY="223.0" text="Altezza:" textFill="#00a1ff" />
+      <Slider fx:id="SliderAltezza" layoutX="257.0" layoutY="224.0" max="210.0" min="100.0" showTickLabels="true" showTickMarks="true" style="-fx-control-inner-background: lightblue;" value="1.0" />
+
+      <Label layoutX="210.0" layoutY="271.0" text="Peso:" textFill="#00a1ff" />
+      <Slider fx:id="SliderPeso" layoutX="259.0" layoutY="271.0" max="120.0" min="40.0" showTickLabels="true" showTickMarks="true" style="-fx-control-inner-background: lightblue;" value="1.0" />
+
+      <Label layoutX="224.0" layoutY="323.0" text="Età:" textFill="#00a1ff" />
+      <Slider fx:id="SliderEta" layoutX="259.0" layoutY="319.0" min="10.0" showTickLabels="true" showTickMarks="true" style="-fx-control-inner-background: lightblue;" value="1.0" />
+
+      <Label layoutX="38.0" layoutY="365.0" text="Fabbisogno calorico giornaliero:" textFill="#00a1ff" />
+      <Slider fx:id="SliderCal" layoutX="259.0" layoutY="365.0" max="3000.0" min="1500.0" showTickLabels="true" showTickMarks="true" style="-fx-control-inner-background: lightblue;" value="1.0" />
+
+      <!-- Buttons with blue gradient background and rounded corners -->
+      <Button fx:id="TastoRegToLogin" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#regToLogin" text="Torna al Login">
+         <style>
+            -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, lightblue, blue);
+            -fx-text-fill: white;
+            -fx-font-size: 14px;
+            -fx-font-weight: bold;
+            -fx-background-radius: 20px;
+            -fx-border-radius: 20px;
+            -fx-padding: 10px 20px;
+         </style>
+      </Button>
+
+      <Button fx:id="TastoRegistraUtente" layoutX="467.0" layoutY="344.0" mnemonicParsing="false" onAction="#registraUtente" prefHeight="58.0" prefWidth="118.0" text="Registrati">
+         <style>
+            -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, lightblue, blue);
+            -fx-text-fill: white;
+            -fx-font-size: 14px;
+            -fx-font-weight: bold;
+            -fx-background-radius: 20px;
+            -fx-border-radius: 20px;
+            -fx-padding: 10px 20px;
+         </style>
+      </Button>
+
+      <!-- Error messages with red color -->
+      <Text fx:id="TestoUsrNegato" fill="RED" layoutX="436.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" text="Username non disponibile" />
+
+      <Text fx:id="TestoMissInput" fill="RED" layoutX="104.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" text="Riempire tutti i campi per completare la registrazione">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+   
+   <!-- Background color for the entire AnchorPane -->
+   <style>
+      -fx-background-color: #e0f7fa; /* Light blue background */
+   </style>
+</AnchorPane>

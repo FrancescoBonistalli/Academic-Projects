@@ -1,0 +1,50 @@
+{
+  "NANOELETTRONICA E FOTONICA": {
+    "VOTO": "20 ",
+    "PESO": 9
+  },
+  "SISTEMI DI ELABORAZIONE": {
+    "VOTO": "28 ",
+    "PESO": 6
+  },
+  "ELETTRONICA ANALOGICA": {
+    "VOTO": "19 ",
+    "PESO": 9
+  },
+  "ELETTRONICA DELLE TELECOMUNICAZIONI": {
+    "VOTO": "27 ",
+    "PESO": 9
+  },
+  "PROGETTAZIONE DI SISTEMI DIGITALI": {
+    "VOTO": "30 ",
+    "PESO": 9
+  },
+  "PROGETTAZIONE DI SENSORI E MICROSISTEMI": {
+    "VOTO": "24 ",
+    "PESO": 9
+  },
+  "SISTEMI EMBEDDED": {
+    "VOTO": "28 ",
+    "PESO": 9
+  },
+  "DISPOSITIVI ELETTRONICI": {
+    "VOTO": "24 ",
+    "PESO": 9
+  },
+  "ELETTRONICA DI POTENZA E DI CONTROLLO": {
+    "VOTO": "26 ",
+    "PESO": 6
+  },
+  "PROGETTAZIONE DI SISTEMI MICROELETTRONICI": {
+    "VOTO": "24 ",
+    "PESO": 12
+  },
+  "TECNOLOGIE MICROELETTRONICHE": {
+    "VOTO": "20 ",
+    "PESO": 6
+  },
+  "TELECOMUNICAZIONI": {
+    "VOTO": "25 ",
+    "PESO": 9
+  }
+}

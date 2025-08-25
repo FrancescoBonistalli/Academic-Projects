@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('../img/montefoscoli-vista-aerea.jpg') no-repeat center center fixed; 
+    background-size: cover; /*dimensione dell'immagine di background*/
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden; 
+    position: relative; 
+}
+
+
+#tabella-home-page {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+#prima-riga-home,
+#seconda-riga-home {
+    background-color: #E6F4F1;
+    border: 1px solid lightgray;
+}
+
+#prima-riga-home td,
+#seconda-riga-home td {
+    padding: 10px;
+    text-align: center;
+}
+
+#logo {
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: myfont1;
+    src: url('../fonts/Dynalight/Dynalight-Regular.ttf') format('truetype');
+}
+
+#scritta {
+    font-family: myfont1, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+
+button {
+    padding: 10px 40px 10px 20px; 
+    margin: 5px;
+    border: none;
+    background-color: #007BFF; 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative; 
+    overflow: hidden; 
+    text-align: left; 
+}
+
+.bottoni-selezioni {
+    display: flex; 
+    align-items: center; 
+    padding: 10px; 
+    font-size: 16px; 
+}
+
+.icona-bottone {
+    width: 2em; 
+    height: 2em; 
+    margin-left: 8px; 
+}
+
+button img {
+    width: 20px; 
+    height: auto;
+    margin-left: 10px; 
+    vertical-align: middle; 
+}
+
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+
+#sezione-home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: transparent;
+    padding: 20px;
+    border: 5px solid lightgray;
+}
+
+#sezione-home > div {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+    position: relative; 
+    border-radius: 10px;
+}
+
+#panoramica-alloggi img,
+#attivita img
+{
+    width: 50px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 10px;
+}
+
+#attivita footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    background-color: #f9f9f9;
+    text-align: left;
+    font-style: italic;
+}
+
+
+#footer-pagina {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+#footer-pagina-non-home {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+

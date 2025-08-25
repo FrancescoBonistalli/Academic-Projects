@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E3F2FD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.HealthManagerClient.Nuovo_attivitaController">
+   <children>
+      <!-- Title -->
+      <Text fx:id="TitoloNuovoAttivita" layoutX="50.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSERIMENTO NUOVA ATTIVITÀ" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <style>
+            -fx-fill: #1565C0;
+         </style>
+      </Text>
+      
+      <!-- Date Picker -->
+      <Label layoutX="100.0" layoutY="100.0" style="-fx-text-fill: #1565C0; -fx-font-size: 14px;" text="Data:" />
+      <DatePicker fx:id="DataNuovoAttivita" layoutX="200.0" layoutY="95.0" style="-fx-control-inner-background: #BBDEFB; -fx-background-color: #64B5F6;" />
+      
+      <!-- Durata Slider -->
+      <Label layoutX="100.0" layoutY="150.0" style="-fx-text-fill: #1565C0; -fx-font-size: 14px;" text="Durata (ore):" />
+      <Slider fx:id="SliderDurataNuovaAttivita" layoutX="200.0" layoutY="145.0" max="12.0" min="1.0" showTickLabels="true" showTickMarks="true" style="-fx-control-inner-background: #BBDEFB;" />
+      
+      <!-- Sforzo Slider -->
+      <Label layoutX="100.0" layoutY="200.0" style="-fx-text-fill: #1565C0; -fx-font-size: 14px;" text="Sforzo (1-5):" />
+      <Slider fx:id="SliderSforzoNuovaAttivita" layoutX="200.0" layoutY="195.0" max="5.0" min="1.0" showTickLabels="true" showTickMarks="true" style="-fx-control-inner-background: #BBDEFB;" />
+      
+      <!-- Calorie Slider -->
+      <Label layoutX="100.0" layoutY="250.0" style="-fx-text-fill: #1565C0; -fx-font-size: 14px;" text="Calorie (kcal):" />
+      <Slider fx:id="SliderCalNuovaAttivita" layoutX="200.0" layoutY="245.0" max="5000.0" min="1.0" showTickLabels="true" showTickMarks="true" style="-fx-control-inner-background: #BBDEFB;" />
+      
+      <!-- Sport Text Field -->
+      <Label layoutX="100.0" layoutY="300.0" style="-fx-text-fill: #1565C0; -fx-font-size: 14px;" text="Sport:" />
+      <TextField fx:id="TestoSportNuovoAttivita" layoutX="200.0" layoutY="295.0" style="-fx-background-color: #E1F5FE; -fx-border-color: #1565C0; -fx-border-radius: 4px;" />
+      
+      <!-- Insert Button -->
+      <Button fx:id="TastoNuovoAttivita" layoutX="260.0" layoutY="350.0" mnemonicParsing="false" onAction="#insNuovoAttivita" style="-fx-background-color: #42A5F5; -fx-text-fill: white; -fx-font-weight: bold;" text="Inserisci" />
+      
+      <!-- Back Button -->
+      <Button fx:id="TastoNuovoAttivitaIndietro" layoutX="50.0" layoutY="350.0" mnemonicParsing="false" onAction="#nuovaAttivitaToHome" style="-fx-background-color: #90CAF9; -fx-text-fill: #0D47A1; -fx-font-weight: bold;" text="Indietro" />
+      <Text fx:id="TestoErrAttivita" fill="RED" layoutX="208.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" text="Inserire tutti i campi" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

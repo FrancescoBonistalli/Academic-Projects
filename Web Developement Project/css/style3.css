@@ -1,0 +1,54 @@
+
+#div-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#form-credenziali {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#form-credenziali label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+
+#form-credenziali input[type="text"],
+#form-credenziali input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+#form-credenziali button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#form-credenziali button:hover {
+    background-color: #0056b3;
+}
+
+#form-credenziali button:disabled {
+    background-color: #1c3b5c;
+    opacity: 0.5;
+}

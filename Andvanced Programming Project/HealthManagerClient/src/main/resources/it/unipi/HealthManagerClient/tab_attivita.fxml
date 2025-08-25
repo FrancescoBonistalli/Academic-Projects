@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e0f7fa;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.HealthManagerClient.Tab_attivitaController">
+   <children>
+      <!-- Styled TableView -->
+      <TableView fx:id="TabellaAttivita" layoutX="87.0" layoutY="80.0" prefHeight="240.0" prefWidth="426.0" style="
+            -fx-background-color: #e0f7fa; /* light blue background */
+            -fx-border-color: deepskyblue;
+            -fx-border-width: 2px;
+            -fx-font-size: 14px;
+            -fx-selection-bar: #b2ebf2; /* light blue selection bar */
+            -fx-font-family: 'Arial';">
+         <!-- Context Menu for deleting selected item -->
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="MenuItemAttivita" mnemonicParsing="false" onAction="#removeAttivita" text="Elimina Selezionata" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      
+      <!-- Styled Button to navigate back to Home -->
+      <Button fx:id="TastoTabAttivitaToHome" layoutX="236.0" layoutY="330.0" mnemonicParsing="false" onAction="#tabAttivitaToHome" text="Torna alla Home" style="
+            -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, lightblue, deepskyblue);
+            -fx-text-fill: white;
+            -fx-font-size: 16px;
+            -fx-font-weight: bold;
+            -fx-background-radius: 20px;
+            -fx-border-radius: 20px;
+            -fx-padding: 10px 20px;
+            -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5, 0, 2);"/>
+   </children>
+</AnchorPane>

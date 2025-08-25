@@ -1,0 +1,50 @@
+{
+  "BIOMETRICS SYSTEMS": {
+    "VOTO": "22 ",
+    "PESO": 6
+  },
+  "DEPENDABILITY": {
+    "VOTO": "28 ",
+    "PESO": 6
+  },
+  "APPLIED CRYPTOGRAPHY": {
+    "VOTO": "25 ",
+    "PESO": 9
+  },
+  "HARDWARE AND EMBEDDED SECURITY": {
+    "VOTO": "28 ",
+    "PESO": 9
+  },
+  "NETWORK SECURITY": {
+    "VOTO": "24 ",
+    "PESO": 9
+  },
+  "ELECTRONICS AND COMMUNICATION TECHNOLOGIES": {
+    "VOTO": "21 ",
+    "PESO": 12
+  },
+  "LANGUAGE-BASED TECHNOLOGY FOR SECURITY": {
+    "VOTO": "28 ",
+    "PESO": 9
+  },
+  "SECURE SOFTWARE ENGINEERING": {
+    "VOTO": "25 ",
+    "PESO": 9
+  },
+  "ORGANIZATIONAL SCIENCES AND INFORMATION AND TECHNOLOGY LAW (OL)": {
+    "VOTO": "25 ",
+    "PESO": 12
+  },
+  "DATA AND SYSTEM SECURITY": {
+    "VOTO": "28 ",
+    "PESO": 9
+  },
+  "PENETRATION AND DEFENCE LABORATORY": {
+    "VOTO": "21 ",
+    "PESO": 6
+  },
+  "ARTIFICIAL INTELLIGENCE FOR CYBERSECURITY": {
+    "VOTO": "23 ",
+    "PESO": 6
+  }
+}

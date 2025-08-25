@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="NuovoSonnoPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E3F2FD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.HealthManagerClient.Nuovo_sonnoController">
+   <children>
+      <!-- Title -->
+      <Text fx:id="TitoloNuovoSonno" layoutX="100.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSERIMENTO NUOVO SONNO" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+         <style>
+            -fx-fill: #1565C0;
+         </style>
+      </Text>
+      
+      <!-- Date Picker -->
+      <Label layoutX="100.0" layoutY="100.0" text="Data:" style="-fx-text-fill: #1565C0; -fx-font-size: 14px;" />
+      <DatePicker fx:id="DataNuovoSonno" layoutX="200.0" layoutY="95.0" style="-fx-control-inner-background: #BBDEFB; -fx-background-color: #64B5F6;" />
+      
+      <!-- Duration Slider -->
+      <Label layoutX="100.0" layoutY="150.0" text="Durata (ore):" style="-fx-text-fill: #1565C0; -fx-font-size: 14px;" />
+      <Slider fx:id="SliderDurataNuovoSonno" layoutX="200.0" layoutY="145.0" max="12.0" min="1.0" showTickLabels="true" showTickMarks="true" value="1.0" style="-fx-control-inner-background: #BBDEFB;" />
+      
+      <!-- Quality Slider -->
+      <Label layoutX="100.0" layoutY="200.0" text="Qualità (1-5):" style="-fx-text-fill: #1565C0; -fx-font-size: 14px;" />
+      <Slider fx:id="SliderQualitaNuovoSonno" layoutX="200.0" layoutY="195.0" max="5.0" min="1.0" showTickLabels="true" showTickMarks="true" style="-fx-control-inner-background: #BBDEFB;" />
+      
+      <!-- Insert Button -->
+      <Button fx:id="TastoNuovoSonno" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" onAction="#insNuovoSonno" text="Inserisci" style="-fx-background-color: #42A5F5; -fx-text-fill: white; -fx-font-weight: bold;" />
+
+      <!-- Back Button -->
+      <Button fx:id="TastoNuovoSonnoIndietro" layoutX="100.0" layoutY="300.0" mnemonicParsing="false" onAction="#nuovoSonnoToHome" text="Indietro" style="-fx-background-color: #90CAF9; -fx-text-fill: #0D47A1; -fx-font-weight: bold;" />
+      
+      <!-- Error Message -->
+      <Text fx:id="TestoErrSonno" fill="RED" layoutX="150.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: false;" text="Inserire tutti i campi" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

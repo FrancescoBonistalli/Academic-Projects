@@ -1,0 +1,22 @@
+/*
+Theme Name: Laureandosi
+Author: Francesco Bonistalli
+*/
+
+body {
+    background: linear-gradient(45deg, #f3f3f3, #e9ecef);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.test{
+    margin : 4px;
+    padding: 2px;
+    background-color: limegreen;
+    border-radius: 3px;
+}
